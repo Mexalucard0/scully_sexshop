@@ -31,46 +31,44 @@ end)
 
 RegisterNetEvent('scully:org')
 AddEventHandler('scully:org', function()   
-    TriggerEvent("scully:black")
-	TriggerEvent("Ragdoll")
+TriggerEvent("scully:black")
+TriggerEvent("Ragdoll")
 	Citizen.Wait(1000)
-	TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 0.9, 'stupid1', 0.6)
+TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 0.9, 'stupid1', 0.6)
 	Citizen.Wait(5000)
-	TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 0.9, 'stupid', 0.6)
+TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 0.9, 'stupid', 0.6)
 	Citizen.Wait(3000)
-	TriggerEvent("pNotify:SendNotification", {text = "You just had an orgasm", type = "error", timeout = 2400, layout = "centerLeft"})
+TriggerEvent("pNotify:SendNotification", {text = "You just had an orgasm", type = "error", timeout = 2400, layout = "centerLeft"})
 	Citizen.Wait(1000)
-	TriggerEvent("Ragdoll")
-	
+TriggerEvent("Ragdoll")
 end)
 
 RegisterNetEvent('scully:org2')
 AddEventHandler('scully:org2', function()   
-    TriggerEvent("scully:black")
-	TriggerEvent("Ragdoll")
+   TriggerEvent("scully:black")
+TriggerEvent("Ragdoll")
 	Citizen.Wait(1000)
-	TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 0.9, 'stupid2', 0.6)
+TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 0.9, 'stupid2', 0.6)
 	Citizen.Wait(5000)
-	TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 0.9, 'stupid', 0.6)
+TriggerServerEvent('InteractSound_SV:PlayWithinDistance', 0.9, 'stupid', 0.6)
 	Citizen.Wait(3000)
-	TriggerEvent("pNotify:SendNotification", {text = "You just had an orgasm", type = "error", timeout = 2400, layout = "centerLeft"})
+TriggerEvent("pNotify:SendNotification", {text = "You just had an orgasm", type = "error", timeout = 2400, layout = "centerLeft"})
 	Citizen.Wait(1000)
-	TriggerEvent("Ragdoll")
-	
+TriggerEvent("Ragdoll")
 end)
 
 RegisterNetEvent('scully:black')
 AddEventHandler('scully:black', function()
-			DoScreenFadeOut(100)
-			while not IsScreenFadedOut() do
-				Citizen.Wait(0)
-			end
-			Citizen.Wait(8000)
-			DoScreenFadeIn(250)
-		end)
+   DoScreenFadeOut(100)
+   while not IsScreenFadedOut() do
+		Citizen.Wait(0)
+   end
+		Citizen.Wait(8000)
+   DoScreenFadeIn(250)
+end)
 
 function setRagdoll(flag)
-  ragdoll = flag
+ragdoll = flag
 end
 Citizen.CreateThread(function()
   while true do
@@ -81,14 +79,14 @@ Citizen.CreateThread(function()
   end
 end)
 
-ragdol = true
+orgasm = true
 RegisterNetEvent("Ragdoll")
 AddEventHandler("Ragdoll", function()
-	if ( ragdol ) then
-		setRagdoll(true)
-		ragdol = false
-	else
-		setRagdoll(false)
-		ragdol = true
-	end
+if ( orgasm ) then
+	setRagdoll(true)
+	orgasm = false
+else
+	setRagdoll(false)
+	orgasm = true
+    end
 end)
