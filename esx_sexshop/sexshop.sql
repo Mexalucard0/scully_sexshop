@@ -3,5 +3,5 @@ INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES ('di
 
 INSERT INTO `shops` (`id`, `store`, `item`, `price`) VALUES
 (83, 'SexShop', 'dildo', 25),
-(84, 'SexShop', 'dildo2', 25),
+(84, 'SexShop', 'dildo2', 25)
 ;
