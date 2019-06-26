@@ -1,4 +1,4 @@
-INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES ('dilso', 'Dildo', 5, 0, 1);
+INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES ('dildo', 'Dildo', 5, 0, 1);
 INSERT INTO `items` (`name`, `label`, `limit`, `rare`, `can_remove`) VALUES ('dildo2', 'Pocket Pussy', 5, 0, 1);
 
 INSERT INTO `shops` (`id`, `store`, `item`, `price`) VALUES
