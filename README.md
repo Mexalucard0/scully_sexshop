@@ -1,4 +1,4 @@
-# esx_sexshop
+# scully_sexshop
 If you need support join my discord: https://discord.gg/6VdPXEM
 
 ## Description
